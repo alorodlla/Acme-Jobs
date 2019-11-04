@@ -17,6 +17,7 @@
 
 	<import resource="conversion-service.xml" />
 	
+  <!-- Requests -->
 	<bean id="request01" class="acme.entities.requests.Request">
 		<property name="title" value= "Sample request 01"/>
 		<property name="moment" value= "2019/06/10 10:32"/>
@@ -42,6 +43,27 @@
 		<property name="text" value= "This is the description of an old request"/>
 		<property name="ticker" value= "RABCD-22222"/>
 		<property name="reward" value= "EUR500"/>
+	
+	<!-- Offers -->
+	<bean id="offer01" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample Offer 01"/>
+	<property name="moment" value="2019/06/11 10:34"/>
+	<property name="text" value="Description of offer 01"/>
+	<property name="deadline" value="2040/07/11 10:35"/>
+	<property name="minmoney" value="1000€"/>
+	<property name="maxmoney" value="2000€"/>
+	<property name="ticker" value="OERPU-9846"/>
+
 	</bean>
 
+	<bean id="offer02" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample Offer 02"/>
+	<property name="moment" value="2019/06/12 10:34"/>
+	<property name="text" value="Description of offer 02"/>
+	<property name="deadline" value="2041/07/11 10:35"/>
+	<property name="minmoney" value="1000€"/>
+	<property name="maxmoney" value="2400€"/>
+	<property name="ticker" value="OEREU-9486"/>
+	</bean>
+	
 </beans>
