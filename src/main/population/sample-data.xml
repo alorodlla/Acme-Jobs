@@ -16,5 +16,32 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<bean id="request01" class="acme.entities.requests.Request">
+		<property name="title" value= "Sample request 01"/>
+		<property name="moment" value= "2019/06/10 10:32"/>
+		<property name="deadline" value= "2019/06/11 00:00"/>
+		<property name="text" value= "This is the description of a request"/>
+		<property name="ticker" value= "RABCD-00000"/>
+		<property name="reward" value= "EUR1000"/>
+	</bean>
+	
+	<bean id="request02" class="acme.entities.requests.Request">
+		<property name="title" value= "Sample request 02"/>
+		<property name="moment" value= "2010/06/10 12:15"/>
+		<property name="deadline" value= "2019/06/11 01:00"/>
+		<property name="text" value= "This is the description of another a request"/>
+		<property name="ticker" value= "RABCD-11111"/>
+		<property name="reward" value= "EUR200"/>
+	</bean>
+	
+	<bean id="request03" class="acme.entities.requests.Request">
+		<property name="title" value= "Sample very old request 03"/>
+		<property name="moment" value= "2000/06/10 02:15"/>
+		<property name="deadline" value= "2000/11/11 01:00"/>
+		<property name="text" value= "This is the description of an old request"/>
+		<property name="ticker" value= "RABCD-22222"/>
+		<property name="reward" value= "EUR500"/>
+	</bean>
 
 </beans>
