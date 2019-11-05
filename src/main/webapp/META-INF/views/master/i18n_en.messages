@@ -50,7 +50,6 @@ master.menu.consumer.favourite-link = Favourite link
 # master.menu.challenge ####################################################
 
 master.menu.challenge.list = Challenges
-master.menu.challenge.create = Create challenge
 
 # master.menu.user-account ####################################################
 

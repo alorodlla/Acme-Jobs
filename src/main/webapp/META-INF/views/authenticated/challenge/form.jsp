@@ -28,6 +28,5 @@
 	<acme:form-money code="authenticated.challenge.form.label.reward-gold" path="rewardGold"/>
 	
 	
-	<acme:form-submit code="authenticated.challenge.form.button.create" action="/authenticated/challenge/create"/>
 	<acme:form-return code="authenticated.challenge.form.button.return"/>
 </acme:form>
