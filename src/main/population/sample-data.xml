@@ -17,7 +17,57 @@
 
 	<import resource="conversion-service.xml" />
 	
-	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+  <!-- Requests -->
+	<bean id="request01" class="acme.entities.requests.Request">
+		<property name="title" value= "Sample request 01"/>
+		<property name="moment" value= "2019/06/10 10:32"/>
+		<property name="deadline" value= "2019/06/11 00:00"/>
+		<property name="text" value= "This is the description of a request"/>
+		<property name="ticker" value= "RABCD-00000"/>
+		<property name="reward" value= "EUR1000"/>
+	</bean>
+	
+	<bean id="request02" class="acme.entities.requests.Request">
+		<property name="title" value= "Sample request 02"/>
+		<property name="moment" value= "2010/06/10 12:15"/>
+		<property name="deadline" value= "2019/06/11 01:00"/>
+		<property name="text" value= "This is the description of another a request"/>
+		<property name="ticker" value= "RABCD-11111"/>
+		<property name="reward" value= "EUR200"/>
+	</bean>
+	
+	<bean id="request03" class="acme.entities.requests.Request">
+		<property name="title" value= "Sample very old request 03"/>
+		<property name="moment" value= "2000/06/10 02:15"/>
+		<property name="deadline" value= "2000/11/11 01:00"/>
+		<property name="text" value= "This is the description of an old request"/>
+		<property name="ticker" value= "RABCD-22222"/>
+		<property name="reward" value= "EUR500"/>
+	
+	<!-- Offers -->
+	<bean id="offer01" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample Offer 01"/>
+	<property name="moment" value="2019/06/11 10:34"/>
+	<property name="text" value="Description of offer 01"/>
+	<property name="deadline" value="2040/07/11 10:35"/>
+	<property name="minmoney" value="1000€"/>
+	<property name="maxmoney" value="2000€"/>
+	<property name="ticker" value="OERPU-9846"/>
+
+	</bean>
+
+	<bean id="offer02" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample Offer 02"/>
+	<property name="moment" value="2019/06/12 10:34"/>
+	<property name="text" value="Description of offer 02"/>
+	<property name="deadline" value="2041/07/11 10:35"/>
+	<property name="minmoney" value="1000€"/>
+	<property name="maxmoney" value="2400€"/>
+	<property name="ticker" value="OEREU-9486"/>
+	</bean>
+    
+    <!-- Challenges -->
+    <bean id="challenge01" class="acme.entities.challenges.Challenge">
 		<property name="title" value="your first challenge"/>
 		<property name="deadline" value="2020/10/10 19:10"/>
 		<property name="description" value="this is your first challenge"/>
@@ -55,5 +105,5 @@
 		<property name="goalGold" value="THE goal"/>
 		<property name="rewardGold" value="EUR 50"/>
 	</bean>
-
+	
 </beans>

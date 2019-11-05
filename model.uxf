@@ -299,41 +299,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>189</x>
-      <y>343</y>
-      <w>231</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes>Challenge
---
-+ title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAMP), Future}
-+ description: String {NotBlank}
-+ level: TipoGoal {NotBlank}
-+ goalBronze: String {NotBlank}
-+ rewardBronze: String {NotBlank}
-+ goalSilver: String
-+ rewardSilver: String
-+ goalGold: String
-+ rewardGold: String</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>0</x>
-      <y>350</y>
-      <w>154</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-TipoGoal
---
-+ GOLD
-+ SILVER
-+ BRONZE
 
-bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
