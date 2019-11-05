@@ -16,5 +16,35 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+	<property name="title" value="Sample announcement 01"/>
+	<property name="moment" value="2019/10/03 10:35"/>
+	<property name="moreInfo"><null/></property>
+	<property name="text" value="This is a description"/>
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+	<property name="title" value="Sample announcement 02"/>
+	<property name="moment" value="2019/06/03 10:35"/>
+	<property name="moreInfo" value="https://twitter.com/"/>
+	<property name="text" value="This is a description 2"/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+	<property name="title" value="Sample announcement 03"/>
+	<property name="moment" value="2019/11/03 10:35"/>
+	<property name="moreInfo"><null/></property>
+	<property name="text" value="This is a description 3"/>
+	</bean>
+	
+	<bean id="investorRecord" class="acme.entities.investorRecords.InvestorRecord">
+	<property name="name" value="investorRecord01"/>
+	<property name="sector" value="Science"/>
+	<property name="investingStatement" value="In process"></property>
+	<property name="stars"><null/></property>
+	</bean>
+	
+	
 
 </beans>
