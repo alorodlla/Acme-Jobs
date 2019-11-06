@@ -59,6 +59,7 @@ master.menu.challenge.list = Desafíos
 
 # master.menu.user-account ####################################################
 
+master.menu.features = Prestaciones
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
 master.menu.user-account.provider = Datos de proveedor

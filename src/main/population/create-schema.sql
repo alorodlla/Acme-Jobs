@@ -1,3 +1,4 @@
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -45,6 +46,8 @@
         `reward_silver_amount` double precision,
         `reward_silver_currency` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `company_record` (
        `id` integer not null,
@@ -58,7 +61,6 @@
         `sector` varchar(255),
         `stars` integer,
         `web` varchar(255),
-
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -68,6 +70,16 @@
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `name` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -85,16 +97,6 @@
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-    
-    create table `investor_record` (
-       `id` integer not null,
-        `version` integer not null,
-        `investing_statement` varchar(255),
-        `name` varchar(255),
-        `sector` varchar(255),
-        `stars` double precision,
-        primary key (`id`)
-    ) engine=InnoDB;
 
     create table `provider` (
        `id` integer not null,
@@ -105,6 +107,24 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `request` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `moment` datetime(6),
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `spam` (
+       `id` integer not null,
+        `version` integer not null,
+        `spamthreshold` double precision,
+        `spamwords` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -128,6 +148,9 @@
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
+
+    alter table `request` 
+       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
@@ -155,5 +178,4 @@
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
-
        references `user_account` (`id`);

@@ -299,7 +299,129 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-
+      <x>77</x>
+      <y>392</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Request
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP)}
++ text: String {NotBlank}
++ ticker: String {NotBlank,Column(unique = true),
+	Pattern(regexp = "^R[A-Z]{4}\\-\\d{5}$")}
++ reward: Money {Valid}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>329</y>
+      <w>77</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++title: String {NotBlank}
++moment: Date {Temporal(TIMESTAMP),Past}
++text: String{NotBlank}
++deadline: Date{Temporal(TIMESTAMP)}
++minmoney: Integer{Valid}
++maxmoney: Integer{Valid}
++ticker: String {NotBlank, Column(unique = true),
+Pattern(regexp = "^O[A-Z]{4}\\-\\d{5}$")}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>301</x>
+      <y>357</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Spam
+--
++ spamwords: String {NotBlank}
++ spamthreshold: Double {PositiveOrZero}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>406</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>InvestRecord
+--
++name: String {NotBlank}
++sector: String {NotBlank}
++investingStatement: String {NotBlank}
++stars: Double {Range(min=0, max=5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>455</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title : String {NotBlank}
++ moment: Date{Temporal(TIMESTAMP),Past}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>266</x>
+      <y>448</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP)}
++ description: String {NotBlank}
++ level: TipoGoal {Valid}
++ goalBronze: String {NotBlank}
++ rewardBronze: Money {Valid}
++ goalSilver: String {NotBlank}
++ rewardSilver: Money {Valid}
++ goalGold: String {NotBlank}
++ rewardGold: Money {Valid}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>196</x>
+      <y>490</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++name: String {NotBlank}
++sector: String {NotBlank}
++ceoname: String {NotBlank}
++description: String {NotBlank}
++web: String {NotBlank,URL}
++phone: String {NotBlank,Pattern(regexp = "^([+]\\d{1,3}\\s)?([(]\\d{1,4}[)]\\s)?\\d{6,10}$") }
++email: String {Email, NotBlank}
++stars: Integer {Max(5), Min(0)}
++incorporated : Boolean {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

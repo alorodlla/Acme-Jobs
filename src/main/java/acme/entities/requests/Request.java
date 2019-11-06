@@ -32,7 +32,6 @@ public class Request extends DomainEntity {
 	private Date				moment;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Past
 	private Date				deadline;
 
 	@NotBlank
@@ -40,7 +39,7 @@ public class Request extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^R[A-Z]{4}\\-\\D{4}$")
+	@Pattern(regexp = "^R[A-Z]{4}\\-\\d{5}$")
 	private String				ticker;
 
 	@Valid

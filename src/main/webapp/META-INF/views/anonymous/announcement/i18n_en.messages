@@ -16,3 +16,9 @@ anonymous.announcement.form.label.title = Title:
 anonymous.announcement.form.label.moreInfo = More Info:
 anonymous.announcement.form.label.text = Text:
 anonymous.announcement.form.button.return = return
+
+anonymous.announcement.label.title = Title
+anonymous.announcement.label.moment = Moment
+anonymous.announcement.label.moreInfo = More Info
+anonymous.announcement.label.text = Text
+anonymous.announcement.button.return = Return
