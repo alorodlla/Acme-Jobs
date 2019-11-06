@@ -28,10 +28,10 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
-master.menu.announcement.announcement-list = Announcement List
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.investor-record.investor-record-list = Investor Records
+master.menu.announcement.announcement-list = Announcement List
 
 # master.menu.administrator ###################################################
 
@@ -39,6 +39,7 @@ master.menu.announcement.announcement-list = Announcement List
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.showRequest = Show customisation parameters
 
 # master.menu.provider ########################################################
 
@@ -58,8 +59,14 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.listRequest = List Requests
+master.menu.user-account.offerlist = Offer list
 master.menu.announcement.announcement-list = Announcement List
 master.menu.investor-record.investor-record-list = Investor Records
+
+# master.menu.challenge ####################################################
+
+master.menu.challenge.list = Challenges
 
 # master.footer ###############################################################
 

@@ -299,33 +299,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>182</x>
-      <y>287</y>
-      <w>224</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>Announcement
---
-+ title : String {NotBlank}
-+ moment: Date{Temporal(TIMESTAMP),Past}
-+ moreInfo: String{URL, Not Blank}
-+ text: String {NotBlank}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>182</x>
-      <y>378</y>
-      <w>245</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>InvestorRecord
---
-+name: String {Not Blank}
-+sector:String {Not Blank}
-+investingStatement:String {Not Blank}
-+stars: Double {Range(0,5),Not Null}</panel_attributes>
+
     <additional_attributes/>
   </element>
 </diagram>

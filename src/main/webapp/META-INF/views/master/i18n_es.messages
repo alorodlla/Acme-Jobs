@@ -39,6 +39,7 @@ master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.showRequest = Mostrar parametros de personalizacion
 
 # master.menu.provider ########################################################
 
@@ -50,6 +51,11 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
+# master.menu.challenge ####################################################
+
+master.menu.challenge.list = Desafíos
+
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -60,6 +66,8 @@ master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
+master.menu.user-account.offerlist = Lista de Ofertas
+
 
 ﻿# master.footer ###############################################################
 
