@@ -83,6 +83,7 @@ master.company.email = contact@acme.com
 # master.license ##############################################################
 
 master.menu.authenticated.company-records.list = Company Records
+master.menu.anonymous.company-records.list = Company Records
 
 master.license.title = License
 master.license.text = \
