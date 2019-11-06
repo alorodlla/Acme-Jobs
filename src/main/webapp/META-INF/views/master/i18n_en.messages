@@ -82,6 +82,8 @@ master.company.email = contact@acme.com
 
 # master.license ##############################################################
 
+master.menu.authenticated.company-records.list = Company Records
+
 master.license.title = License
 master.license.text = \
 	You may use this system free of charge, as long as you carefully observe the \

@@ -17,4 +17,15 @@
 
 	<import resource="conversion-service.xml" />
 
+	<bean id="CompanyRecord01" class="acme.entities.companyrecords.CompanyRecord">
+		<property name="name" value="DefaultName01"/>
+		<property name="sector" value="DefaultSector01"/>
+		<property name="ceoname" value="DefaultCeoname01"/>
+		<property name="description" value="DefaultDescription01"/>
+		<property name="web" value="http://DefaultDomain01.com"/>
+		<property name="phone" value="+34 664645707"/>
+		<property name="email" value="DefaultEmail01@DefaultDomain.com"/>
+		<property name="stars" value="3"/>
+		<property name="incorporated" value="true"/>
+	</bean>
 </beans>
