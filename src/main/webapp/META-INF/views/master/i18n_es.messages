@@ -28,14 +28,19 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
+master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.investor-record.investor-record-list = Declaraciones de inversión
+master.menu.anonymous.company-records.list = Registros de empresa
 
 # master.menu.administrator ###################################################
 
+master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.showRequest = Mostrar parametros de personalizacion
 
 # master.menu.provider ########################################################
 
@@ -47,6 +52,11 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
+# master.menu.challenge ####################################################
+
+master.menu.challenge.list = Desafíos
+
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -55,6 +65,11 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.announcement.announcement-list = Lista de anuncios
+master.menu.investor-record.investor-record-list = Declaraciones de inversión
+master.menu.user-account.offerlist = Lista de Ofertas
+master.menu.authenticated.company-records.list = Registros de empresa
+
 
 ﻿# master.footer ###############################################################
 
@@ -82,9 +97,6 @@ master.company.email = contact@acme.com
 
 # master.license ##############################################################
 
-master.menu.authenticated.company-records.list = Registros de empresa
-master.menu.anonymous.company-records.list = Registros de empresa
-
 master.license.title = Licencia
 master.license.text = \
 	Puede usar este sistema de forma completamente gratuita respetando las leyes \
@@ -94,4 +106,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
