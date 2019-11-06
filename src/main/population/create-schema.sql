@@ -20,12 +20,46 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal_bronze` varchar(255),
+        `goal_gold` varchar(255),
+        `goal_silver` varchar(255),
+        `level` integer,
+        `reward_bronze_amount` double precision,
+        `reward_bronze_currency` varchar(255),
+        `reward_gold_amount` double precision,
+        `reward_gold_currency` varchar(255),
+        `reward_silver_amount` double precision,
+        `reward_silver_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `maxmoney_amount` double precision,
+        `maxmoney_currency` varchar(255),
+        `minmoney_amount` double precision,
+        `minmoney_currency` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -38,11 +72,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `spam` (
-       `id` integer not null,
-        `version` integer not null,
-        `spamthreshold` double precision,
-        `spamwords` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -63,6 +92,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `offer` 
+       add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
