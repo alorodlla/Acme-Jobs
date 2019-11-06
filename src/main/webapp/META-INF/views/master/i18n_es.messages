@@ -28,11 +28,14 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
+master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.investor-record.investor-record-list = Declaraciones de inversión
 
 # master.menu.administrator ###################################################
 
+master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
@@ -61,7 +64,10 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.announcement.announcement-list = Lista de anuncios
+master.menu.investor-record.investor-record-list = Declaraciones de inversión
 master.menu.user-account.offerlist = Lista de Ofertas
+
 
 ﻿# master.footer ###############################################################
 

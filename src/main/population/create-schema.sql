@@ -1,8 +1,17 @@
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `announcement` (
+       `id` integer not null,
+        `version` integer not null,
+        `moment` datetime(6),
+        `more_info` varchar(255),
+        `text` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -60,6 +69,16 @@
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `name` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 
