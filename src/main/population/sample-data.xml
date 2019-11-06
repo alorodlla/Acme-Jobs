@@ -38,11 +38,18 @@
 	<property name="text" value="This is a description 3"/>
 	</bean>
 	
-	<bean id="investorRecord" class="acme.entities.investorRecords.InvestorRecord">
+	<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
 	<property name="name" value="investorRecord01"/>
 	<property name="sector" value="Science"/>
 	<property name="investingStatement" value="In process"></property>
 	<property name="stars"><null/></property>
+	</bean>
+	
+	<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+	<property name="name" value="investorRecord01"/>
+	<property name="sector" value="Services"/>
+	<property name="investingStatement" value="Lo siento, no se que hay que poner aquí"></property>
+	<property name="stars" value="5"/>
 	</bean>
 	
 	
