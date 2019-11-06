@@ -17,4 +17,8 @@
 
 	<import resource="conversion-service.xml" />
 
+	<bean id="spam" class= "acme.entities.spam.Spam">
+		<property name= "spamwords" value="sex, hard core, viagra, cialis, nigeria, you`ve won, million dollar"/>
+		<property name= "spamthreshold" value= "1.0"/>
+	</bean>
 </beans>
