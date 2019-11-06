@@ -43,3 +43,5 @@
     drop table if exists `announcement`;
     
     drop table if exists `investor_record`;
+
+    drop table if exists `company_record`;

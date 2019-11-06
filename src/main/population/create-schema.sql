@@ -4,7 +4,7 @@
         `user_account_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
-    
+
     create table `announcement` (
        `id` integer not null,
         `version` integer not null,
@@ -45,6 +45,20 @@
         `reward_silver_amount` double precision,
         `reward_silver_currency` varchar(255),
         `title` varchar(255),
+
+    create table `company_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceoname` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `incorporated` bit,
+        `name` varchar(255),
+        `phone` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `web` varchar(255),
+
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -141,4 +155,5 @@
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
+
        references `user_account` (`id`);

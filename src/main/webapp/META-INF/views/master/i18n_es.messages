@@ -32,6 +32,7 @@ master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
+master.menu.anonymous.company-records.list = Registros de empresa
 
 # master.menu.administrator ###################################################
 
@@ -67,6 +68,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
 master.menu.user-account.offerlist = Lista de Ofertas
+master.menu.authenticated.company-records.list = Registros de empresa
 
 
 ﻿# master.footer ###############################################################
@@ -104,4 +106,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
