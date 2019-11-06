@@ -16,3 +16,9 @@ administrator.announcement.form.label.title = Título:
 administrator.announcement.form.label.moreInfo = Más Info:
 administrator.announcement.form.label.text = Texto:
 administrator.announcement.form.button.return = Volver
+
+administrator.announcement.label.title = Titulo
+administrator.announcement.label.moment = Momento
+administrator.announcement.label.moreInfo = Más Info
+administrator.announcement.label.text = Texto
+administrator.announcement.button.return = Volver

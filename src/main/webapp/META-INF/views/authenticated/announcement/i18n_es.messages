@@ -16,3 +16,9 @@ authenticated.announcement.form.label.title = Título:
 authenticated.announcement.form.label.moreInfo = Más Info:
 authenticated.announcement.form.label.text = Texto:
 authenticated.announcement.form.button.return = Volver
+
+authenticated.announcement.label.title= Título	
+authenticated.announcement.label.moment = Momento
+authenticated.announcement.label.moreInfo = Más Info
+authenticated.announcement.label.text = Texto
+authenticated.announcement.button.return = Return
